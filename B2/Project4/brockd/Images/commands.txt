@@ -1,0 +1,17 @@
+show dbs; -- shows all mongo databases
+use sweetscomplete; -- uses the sweetB2 database
+show collections -- shows the collections
+db.products.find() -- This shows all of your inserts
+db.products.find( { price: { $gt: 2.90, $lt: 5.00 } } ); -- This finds everything greater than 2.90 and less than 5.00
+db.products.find( { price: { $gt: 4.00 } } ); -- finds everything greater than 4.00 in the price row.
+
+
+"Inserts (I did theese in compass)":
+
+db.treats.insert([{"_id":"5c055d5415aa290c38ac2956","sku":"C21000","title":"Chocolate Eclair","price":"2.10"}
+{"_id":"5c055dbd15aa290c38ac2957","sku":"C22000","title":"Chocolate Toster Tarts","price":"3.20"}
+{"_id":"5c055e6f15aa290c38ac2958","sku":"C30000","title":"Chocolate Mousse","price":"3.00"}
+{"_id":"5c055e6f15aa290c38ac2958","sku":"C30000","title":"Chocolate Mousse","price":"3.00"}
+{"_id":"5c055e9f15aa290c38ac2959","sku":"C32000","title":"Chocolate Fondue","price":"6.10"}
+{"_id":"5c055ecc15aa290c38ac295a","sku":"C61000","title":"Chocolate Layer Cake","price":"6.10"}
+{"_id":"5c055efc15aa290c38ac295b","sku":"M43000","title":"Mint Chocolate Milk Shake","price":"4.30"}]);

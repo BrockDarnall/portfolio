@@ -1,0 +1,141 @@
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="clock.css">
+  <title>Project 13</title>
+  <script type="text/javascript">
+   
+    
+      window.onload = setInterval(clock,1000);
+      
+      function clock()
+      {
+      var d = new Date();
+      
+      var date = d.getDate();
+      
+      var month = d.getMonth();
+      var montharr =["Jan","Feb","Mar","April","May","June","July","Aug","Sep","Oct","Nov","Dec"];
+      month=montharr[month];
+      
+      var year = d.getFullYear();
+      
+      var day = d.getDay();
+      var dayarr =["Sun","Mon","Tues","Wed","Thurs","Fri","Sat"];
+      day=dayarr[day];
+      
+      var hour = d.getHours();
+        var min = d.getMinutes();
+      var sec = d.getSeconds();
+    
+
+    
+     
+      if (min < 10){
+          min = "0" + min;
+      }
+      if (sec < 10){
+          sec = "0" + sec;
+      }
+    
+      
+      
+      document.getElementById("date").innerHTML=day+" - "+date+" "+month+" "+year+ " - " +hour+":"+min+":"+sec;
+    
+    if (day == "Sat" || day == "Sun") {
+      document.getElementById("resp").innerHTML="Good It's the Weekend";
+    } else {
+        if (hour <= 7) {
+            if(min < 45) {
+              document.getElementById("resp").innerHTML="Good Morning";
+            } else if (min >= 45) {
+              document.getElementById("resp").innerHTML="Your in 1st Period";
+            }
+          }
+
+        else if(hour == 8) {
+           
+          document.getElementById("resp").innerHTML="Your in 1st Period";
+            
+        } 
+        
+        
+        else if(hour == 9) {
+          if(min < 15) {
+            document.getElementById("resp").innerHTML="Your in 1st Period";
+            } else if (min >= 15) {
+              document.getElementById("resp").innerHTML="Your in 2nd Period";
+            }
+       } 
+       
+       
+       else if(hour == 10) {
+        if(min < 52) {
+          document.getElementById("resp").innerHTML="Your in 2nd Period";
+            } else if (min >= 52) {
+              document.getElementById("resp").innerHTML="Your at Lunch";
+            }
+       } 
+       
+       
+       else if(hour == 11) {
+        if(min < 37) {
+          document.getElementById("resp").innerHTML="Your at Lunch";
+            } else if (min >= 37) {
+              document.getElementById("resp").innerHTML="Your in 3rd Period";
+            }
+       } 
+
+       else if(hour == 12) {
+           
+        document.getElementById("resp").innerHTML="Your in 3rd Period";
+             
+         } 
+       
+       else if(hour == 13) {
+        if(min < 7) {
+          document.getElementById("resp").innerHTML="Your in 3rd Period";
+            }else if (min >= 7) {
+              document.getElementById("resp").innerHTML="Your in 4th Period";
+       }
+            }
+
+            else if(hour == 14) {
+        if(min < 42) {
+          document.getElementById("resp").innerHTML="Your in 4th Period";
+            }else if (min >= 42) {
+              document.getElementById("resp").innerHTML= "It's after school";
+       }
+            }
+            else {
+              document.getElementById("resp").innerHTML= "It's after school";
+            }
+    }
+    
+    
+      }
+    </script>
+</head>
+
+<body>
+   <div id="this">
+    <h3 id="me">Brock Darnall DOM Clock</h3>
+   <p id="date"></p>
+   <p id="resp"></p>
+</div>
+
+<div id="p">
+
+  <img src="Images/1.png" style="width: 800px">
+  <h3>In this first photo it shows how I made the clock and how it funcitons. First it gets the date and then the month I created an array for it to choose from depending on the number of month it is. Then I did the same thing with the day.</h3>
+  <hr/>
+  <img src="Images/2.png" style="width: 800px">
+  <h3>In the second photo I made the code that tells the time of school it is during the day except for Saturday and Sunday because no-one is at school at the time.</h3>
+  <hr/>
+  <img src="Images/3.png" style="width: 800px">
+<h3>The final picture shows The end of the if statments for returning resp and also the html of where all of the code above goes into.</h3>
+
+</div>
+
+
+ </body>
+</html>

@@ -1,0 +1,254 @@
+#body {
+  background-color: #67A2E5;
+  transition: background-color 2s;
+
+}
+
+
+
+
+a {
+
+  width:100%;
+
+
+
+
+     color:#313131;
+
+
+     position: block;
+     -webkit-animation:colorchange 10s infinite alternate;
+
+}
+
+
+
+@-webkit-keyframes colorchange {
+ 0% {
+
+   color: #ff2400;
+ }
+
+ 10% {
+
+   color: #1de840;
+ }
+
+ 20% {
+
+   color: #1abc9c;
+ }
+
+ 30% {
+
+   color: #d35400;
+ }
+
+ 40% {
+
+   color: #2b1de8;
+ }
+
+ 50% {
+
+   color: #34495e;
+ }
+
+ 60% {
+
+   color: #dd00f3;
+ }
+
+ 70% {
+
+   color: #e8b71d;
+ }
+ 80% {
+
+   color: #f1c40f;
+ }
+
+ 90% {
+
+   color: #1ddde8;
+ }
+
+ 100% {
+
+   color: pink;
+ }
+}
+
+
+
+#title {
+  font-family: 'Pacifico', cursive;
+}
+#top{
+  text-align: center;
+}
+
+#name {
+  font-family: 'Pacifico', cursive;
+}
+#fixMe {
+  display:none;
+
+}
+
+#master {
+  display: grid;
+  grid-template-columns: auto auto auto, auto;
+  grid-template-rows: 250px 180px 180px, 250px;
+  grid-gap: 10px;
+  padding: 20px;
+font-family: 'EB Garamond', serif;
+transition: margin-left .5s;
+    padding: 16px;
+    background-image: linear-gradient(to bottom right, #EF5CEA, #60EF5C);
+
+}
+
+#header {
+  grid-column: 1 / span 2;
+  grid-row: 1 / span 1;
+  background-color: #FA9605;
+    font-family: 'EB Garamond', serif;
+
+}
+
+#main {
+  grid-column: 2 / span 2;
+  grid-row: 2 / span 3;
+  background-color: #FF0000;
+  border: 3px, #2BF09C;
+  font-family: 'EB Garamond', serif;
+
+}
+
+#left {
+  grid-column: 1 / span 1;
+  grid-row: 2 / span 4;
+  background-color: #2EA7CA;
+
+}
+
+#right {
+  grid-column: 4 / span 1;
+  grid-row: 1 / span 4;
+  background-color: #C24CA2;
+
+}
+#footer {
+  grid-column: 3 / span 2;
+  grid-row: 5 / span 1;
+
+   position: block;
+ background: linear-gradient(to left, #ff2400, #e81d1d, #e8b71d, #e3e81d, #1de840, #1ddde8, #2b1de8, #dd00f3, #dd00f3, #ff2400, #e81d1d, #e8b71d, #e3e81d, #1de840, #1ddde8, #2b1de8, #dd00f3, #dd00f3, #ff2400, #e81d1d, #e8b71d, #e3e81d, #1de840, #1ddde8, #2b1de8, #dd00f3, #dd00f3);
+ background-size: 1800% 1800%;
+
+ -webkit-animation: rainbow 10s ease infinite;
+ -z-animation: rainbow 10s ease infinite;
+ -o-animation: rainbow 10s ease infinite;
+   animation: rainbow 18s ease infinite;}
+
+ @-webkit-keyframes rainbow {
+     0%{background-position:0% 82%}
+     50%{background-position:100% 19%}
+     100%{background-position:0% 82%}
+ }
+ @-moz-keyframes rainbow {
+     0%{background-position:0% 82%}
+     50%{background-position:100% 19%}
+     100%{background-position:0% 82%}
+ }
+ @-o-keyframes rainbow {
+     0%{background-position:0% 82%}
+     50%{background-position:100% 19%}
+     100%{background-position:0% 82%}
+ }
+ @keyframes rainbow {
+     0%{background-position:0% 82%}
+     50%{background-position:100% 19%}
+     100%{background-position:0% 82%}
+ }
+
+
+ @keyframes shake {
+   0% { transform: translate(1px, 1px) rotate(0deg); }
+   10% { transform: translate(-1px, -2px) rotate(-1deg); }
+   20% { transform: translate(-3px, 0px) rotate(1deg); }
+   30% { transform: translate(3px, 2px) rotate(0deg); }
+   40% { transform: translate(1px, -1px) rotate(1deg); }
+   50% { transform: translate(-1px, 2px) rotate(-1deg); }
+   60% { transform: translate(-3px, 1px) rotate(0deg); }
+   70% { transform: translate(3px, 1px) rotate(-1deg); }
+   80% { transform: translate(-1px, -1px) rotate(1deg); }
+   90% { transform: translate(1px, 2px) rotate(0deg); }
+   100% { transform: translate(1px, -2px) rotate(-1deg); }
+ }
+
+#eaglehigh:hover {
+  background-color: #4BDA1A;
+}
+
+#colored:hover {
+  background-color: #1D9CEE;
+}
+
+#cenn:hover {
+
+  background-color: #DA3D1A;
+}
+
+#this{
+  border-radius: 8px;
+   border: 2px solid #EA32F0;
+   text-align: center;
+   margin-left: 903px;
+   margin-top: 50px;
+}
+
+#this:hover {
+  animation: shake 0.5s;
+  animation-iteration-count: infinite;
+}
+
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}

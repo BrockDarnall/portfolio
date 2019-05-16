@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+
+    <title>Project 6</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Berkshire+Swash" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Bitter" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=EB+Garamond" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="css/Home.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+
+</head>
+
+
+
+
+
+<body id="body">
+<div id="title">
+
+<h1>Final</h1>
+
+
+</div>
+
+
+
+
+
+
+
+  <div id="master">
+
+
+      <div id="header">
+        <h1>We made multi-tables with our customers db. This is how we did it.<br /> Part 1.
+        </h1>
+        <br />
+    <h3>
+      db.customers.insert({<br />
+              first_name: "Tom",<br />
+              mname: "Blank", lname: "Smith",<br />
+              animal:[<br />
+                {<br />
+                 species: "Cat", name: "Sam", gender: "M", yearBorn: 2001, enteree: 'Brock D'<br />
+                },{<br />
+                 species: "Parrot", name: "Jeff", gender: "M", yearBorn: 2012, enteree: "Brock D"<br />
+                }]<br />
+              });<br />
+    </h3>
+      </div>
+
+
+
+        <div id="main">
+          <h1>This is the second part going more in depth of the multi-table by adding another table being diagnosis.
+          </h1>
+          <br />
+          <h3>
+          db.customers.insert({<br />
+                  first_name: "Tom",<br /><br />
+                  mname: "Blank", lname: "Smith",<br />
+                  animal:[<br />
+                    {<br />
+                     species: "Cat", name: "Sam", gender: "M", yearBorn: 2001, diagnosis: [<br />
+                     {<br />
+                       date: '2018-05-13',<br />
+                       evaluation: 'The cat had fallen out of a tree and broke his leg.'<br />
+                     }],<br />
+                     enteree: 'Brock D'<br />
+                    },<br />
+                    {<br />
+                     species: "Parrot", name: "Jeff", gender: "M", yearBorn: 2012, enteree: "Brock D"<br />
+                    }]<br />
+                  });<br />
+                </h3>
+        </div>
+
+
+
+
+
+
+            <div id="right">
+
+            </div>
+
+
+
+      <div id="footer">
+
+      </div>
+
+
+
+  </div>
+
+
+
+</body>
+</html>

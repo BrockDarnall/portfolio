@@ -1,0 +1,108 @@
+#body {
+  background-color: #2BF09C;
+}
+
+#title {
+  text-align: center;
+}
+
+
+a {
+
+  width:100%;
+
+
+
+
+     color:#313131;
+
+
+     position: block;
+}
+
+
+
+#title {
+  text-align: center;
+  font-family: 'Pacifico', cursive;
+}
+
+#name {
+  font-family: 'Pacifico', cursive;
+}
+
+
+#master {
+  display: grid;
+  grid-template-columns: 150px 80px 80px, 150px;
+  grid-template-rows: auto auto auto, auto;
+  grid-gap: 10px;
+  padding: 20px;
+font-family: 'EB Garamond', serif;
+
+}
+
+#header {
+  grid-column: 2 / span 1;
+  grid-row: 1 / span 1;
+  background-color: #FA9605;
+    font-family: 'EB Garamond', serif;
+    text-align: center;
+}
+
+#main {
+  grid-column: 2 / span 1;
+  grid-row: 2 / span 1;
+  background-color: #FF0000;
+  border: 3px, #2BF09C;
+  font-family: 'EB Garamond', serif;
+  text-align: center;
+}
+
+#left {
+  grid-column: 2 / span 1;
+  grid-row: 3 / span 1;
+  background-color: #2EA7CA;
+  text-align: center;
+}
+
+
+
+#right {
+  grid-column: 2 / span 1;
+  grid-row: 4 / span 1;
+  background-color: #2BF09C;
+  text-align: center;
+}
+#footer {
+  grid-column: 1 / span 3;
+  grid-row: 5 / span 1;
+  background-color: #2BF09C;
+  text-align: center;
+ }
+
+#eaglehigh:hover {
+  background-color: #4BDA1A;
+}
+
+#colored:hover {
+  background-color: #1D9CEE;
+}
+
+#cenn:hover {
+
+  background-color: #DA3D1A;
+}
+
+#this{
+  border-radius: 8px;
+   border: 2px solid #EA32F0;
+   text-align: center;
+   margin-left: 903px;
+   margin-top: 100px;
+}
+
+#this:hover {
+  animation: shake 0.5s;
+  animation-iteration-count: infinite;
+}
